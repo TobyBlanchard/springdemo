@@ -11,6 +11,13 @@ public class PropertyModel {
    public PropertyModel() {
 	  
    }
+   
+   public PropertyModel(String name, String address, String city, String unitNumber) {
+	   this.name = name;
+	   this.address = address;
+	   this.city = city;
+	   this.unitNumber = unitNumber;
+   }
    public void setName(String name) {
 	this.name = name;
 }

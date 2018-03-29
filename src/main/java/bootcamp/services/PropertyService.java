@@ -9,17 +9,12 @@ import bootcamp.model.PropertyModel;
 
 public class PropertyService {
 	
-	
+	@Autowired
 	private PropertyDao propertyDao;
 
-	public void getPropertyByName(String name) {
-		String property = propertyDao.findAddress("Ashford");
-		System.out.println(property);
-		//return propertyDao.getPropertyByName();
-		//return property;
+	public PropertyModel getPropertyByName(String name) {
+		return propertyDao.findAddress(name);
 	}	
 	
-public void setPropertyDao(PropertyDao propertyDao) {
-		this.propertyDao = propertyDao;
-	}	
+	
 }
