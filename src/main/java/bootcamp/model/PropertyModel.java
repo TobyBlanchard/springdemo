@@ -4,8 +4,8 @@ public class PropertyModel {
 
     private String name;
     private String address;
-    private String unitNumber;
     private String city;
+    private String unitNumber;
     
     
    public PropertyModel() {

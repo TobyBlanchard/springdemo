@@ -14,6 +14,7 @@ public class PropertyDao {
 
 	public PropertyDao() {
 		list.add(new PropertyModel("Ashford", "123 Herodian Way", "Atlanta, GA 30067", "Unit 1"));
+		list.add(new PropertyModel("Ashford", "123 Herodian Way", "Atlanta, GA 30067", "Unit 2"));
 	}
 
 	public PropertyModel findAddress(String name) {
@@ -27,6 +28,15 @@ public class PropertyDao {
 
 		return returnProperty;
 
+	}
+
+	public List<PropertyModel> getMethod() {
+		return list;
+	}
+
+	public List<PropertyModel> postMethod(PropertyModel pm) {
+		list.add(pm);
+		return list;
 	}
 
 
