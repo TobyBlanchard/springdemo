@@ -31,11 +31,11 @@ class PropertySpec extends Specification {
 		when: "A Property Name is entered"
 
 		md = propertyService.getPropertyByName("Ashford")
-		println md.getUnitNumber();		
+			
 		
 		then: "The property name, address, and unit number is given"
+		
 		property == md;
-		//property == propertyService.getPropertyByName("The Ritz");
 		
 		
 	}

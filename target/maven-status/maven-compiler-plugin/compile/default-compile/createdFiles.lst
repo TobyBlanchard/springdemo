@@ -3,3 +3,4 @@ bootcamp\Application.class
 bootcamp\controller\PropertyController.class
 bootcamp\services\PropertyService.class
 bootcamp\dao\PropertyDao.class
+bootcamp\services\Bean.class

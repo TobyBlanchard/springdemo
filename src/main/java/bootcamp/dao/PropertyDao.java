@@ -1,13 +1,15 @@
 package bootcamp.dao;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
 import java.util.List;
+
+import org.springframework.stereotype.Controller;
+
 import bootcamp.model.PropertyModel;
 
+@Controller
 public class PropertyDao {
-
+	
 	private List<PropertyModel> list = new ArrayList<PropertyModel>();
 
 	public PropertyDao() {
@@ -27,9 +29,6 @@ public class PropertyDao {
 
 	}
 
-	public PropertyModel getPropertyByName(String name) {
 
-		return null;
-	}
 
 }
